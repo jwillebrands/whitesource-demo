@@ -1,0 +1,40 @@
+options:
+  languages: [ "java" ]
+  resolverType: "coursier"
+  resolvers:
+    - id: "jcenter"
+      type: "default"
+      url: https://jcenter.bintray.com
+  strictVisibility: true
+  transitivity: runtime_deps
+  versionConflictPolicy: highest
+  thirdPartyDirectory: ""
+
+dependencies:
+  org.hamcrest:
+    hamcrest-library:
+      lang: java
+      version: "1.3"
+
+  org.springframework.boot:
+    spring:
+      lang: java
+      version: "2.1.3.RELEASE"
+      modules: [
+        "boot",
+        "boot-test-autoconfigure",
+        "boot-test",
+        "boot-autoconfigure",
+        "boot-starter-web"
+      ]
+  org.springframework:
+    spring:
+      lang: java
+      version: "5.1.5.RELEASE"
+      modules: [
+        "beans",
+        "context",
+        "test",
+        "web"
+      ]
+

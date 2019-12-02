@@ -1,0 +1,6 @@
+.bazelrc.user
+.idea
+dist
+bazel-out
+node_modules
+yarn-error.log
